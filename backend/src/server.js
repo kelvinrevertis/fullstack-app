@@ -9,7 +9,7 @@ POST = Criar
 */
 
 app.get('', (request,response)=>{
-    return response.send('ok')
+    return response.send('Hello World')
 })
 
 app.listen(3000, ()=> {
