@@ -1,6 +1,12 @@
 const express = require('express')
 
-const app = express()
+class App{
+
+    constructor(){
+        this.server = express()
+    }
+    
+
 /*
 GET= Buscar 
 DELETE = Deletar 
@@ -11,7 +17,4 @@ POST = Criar
 app.get('', (request,response)=>{
     return response.send('Hello World, teste')
 })
-
-app.listen(3000, ()=> {
-    console.log('Serviço rodando  na porta 3000')
-})
+}
