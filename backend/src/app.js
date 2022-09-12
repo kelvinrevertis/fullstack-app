@@ -1,4 +1,5 @@
-const express = require('express')
+//const express = require('express')
+import express from 'express'
 
 class App{
 
@@ -14,7 +15,9 @@ PUT = Alterar
 POST = Criar
 */
 
-app.get('', (request,response)=>{
+/*app.get('', (request,response)=>{
     return response.send('Hello World, teste')
-})
+})*/
 }
+
+export default new App().server
