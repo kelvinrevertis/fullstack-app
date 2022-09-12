@@ -1,5 +1,6 @@
 //const express = require('express')
 import express from 'express'
+import mongoose from 'mongoose'
 
 class App{
 
@@ -7,6 +8,9 @@ class App{
         this.server = express()
     }
     
+    database(){
+        mongoose.connect('mongodb+srv://totalzero:iHDKdWXKHgTMl2GI@cluster0.jhuejl6.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true})
+    }
 
 /*
 GET= Buscar 
