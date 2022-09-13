@@ -6,10 +6,12 @@ class App{
 
     constructor(){
         this.server = express()
+
+        this.database()
     }
     
     database(){
-        mongoose.connect('mongodb+srv://totalzero:iHDKdWXKHgTMl2GI@cluster0.jhuejl6.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true})
+        mongoose.connect('mongodb+srv://totalzero:iHDKdWXKHgTMl2GI@cluster0.jhuejl6.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
     }
 
 /*
@@ -20,7 +22,7 @@ POST = Criar
 */
 
 /*app.get('', (request,response)=>{
-    return response.send('Hello World, teste')
+    return response.send('Helloasdadssadadas World, teste')
 })*/
 }
 
